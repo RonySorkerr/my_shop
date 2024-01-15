@@ -8,12 +8,20 @@
 </head>
 <body>
     <form action="">
+        <div class="box_1">
+            <div class="box_mix_1"></div>
+        </div>
+        <div class="box_2">
+            <div class="box_mix_2"></div>
+        </div>
         <div class="contents">
-            <input type="text" placeholder="FIRST NAME">
-            <input type="text" placeholder="LAST NAME">
-            <input type="date" name="DOB" id="date_birth">
-            <label for="country">Choose your country</label>
-            <select name="" id="">
+            <h1>Sign Up To Continue With <br> RSTORE</h1>
+            <input type="text" placeholder="FIRST NAME" required>
+            <input type="text" placeholder="LAST NAME" required>
+            <input type="date" name="DOB" id="date_birth" required>
+            <input  type="email" name="email" id="Email" placeholder="EMAIL ID" required>
+            <label for="country">SELECT YOUR COUNTRY</label>
+            <select name="" id="" required>
                 <option value="none">--select your country--</option>
                 <option value="">Afghanistan</option>
                 <option value="">Albania</option>
@@ -27,7 +35,9 @@
                 <option value="">Burundi</option>
                 <option value="">New-Zealand</option>
             </select>
-            <input type="email" name="email" id="Email" placeholder="EMAIL ID">
+            <input type="password" placeholder="CREATE A PASSWORD" required>
+            <input type="password" placeholder="RETYPE YOUR PASSWORD" required>
+            <button type="submit">SIGN UP</button>
         </div>
     </form>
 </body>
