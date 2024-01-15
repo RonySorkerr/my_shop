@@ -1,0 +1,46 @@
+@media screen and (max-width:600px) {
+    body{
+        width: 90%;
+    }   
+    .header{
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .header ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .products{
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;
+    }
+
+    .upcoming{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .email{
+        border-radius: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .subs{
+        border-radius: 20px;
+    }
+
+    .why_us{
+        padding: 20px;
+    }
+
+    footer{
+        padding: 20px;
+    }
+    footer .links img{
+        width: 110px;
+        margin: 10px;
+    }
+}
