@@ -1,4 +1,16 @@
-@media screen and (min-width:601px) and (max-width:1365px) {
+/* laptop sizing */
+@media screen and (max-width:1400px) {
+    .products{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .upcoming{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+/* tablet sizing */
+@media screen and (max-width:1399px) and (min-width:601) {
     .products{
         grid-template-columns: repeat(3,1fr);
     }
@@ -7,6 +19,9 @@
         grid-template-columns: repeat(3,1fr);
     }
 }
+
+
+/* mobile sizing */
 
 @media screen and (max-width:600px) {
     body{
