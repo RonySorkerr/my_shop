@@ -18,26 +18,34 @@ body {
 }
 
 /* header section styling starts */
+.hov_links{
+    display: none;
+}
 
+header {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+}
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px auto;
+    margin: auto;
 }
 
-.header .logo{
+.header .logo {
     font-size: 25px;
-    
+
 }
 
-.logo .color{
-    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-    0px -4px 10px rgba(255,255,255,0.3);
+.logo .color {
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
 }
 
-.header .logo:hover .color{
+.header .logo:hover .color {
     color: palevioletred;
     transition: 0.87s;
 }
@@ -62,13 +70,13 @@ body {
 
 /* banner styling starts here */
 
-.banner{
+.banner {
     width: 80%;
     height: 500px;
     margin: auto;
 }
 
-.banner img{
+.banner img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -78,30 +86,38 @@ body {
 
 /* latest products section styling starts here */
 
-.latest_products{
+.latest_products {
     text-align: center;
     margin: 40px auto;
 }
 
-.latest_products .title{
+.latest_products .title {
     font-size: 30px;
 }
 
-.products{
+.products {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 30px;
 }
 
-.products .imgs img{
+.products .imgs img {
     width: 250px;
     height: 250px;
+    border-radius: 10px;
 }
+
+.by_btn button {
+    border: 0;
+    position: absolute;
+
+}
+
 /* latest products section styling ends here */
 /* committed section styling starts here */
 
-.committed{
+.committed {
     text-align: center;
     width: 100%;
     border-radius: 10px;
@@ -109,11 +125,11 @@ body {
     background-color: wheat;
 }
 
-.committed h1{
+.committed h1 {
     font-size: 25px;
 }
 
-.committed button{
+.committed button {
     padding: 10px 20px;
     border: 0;
     border-radius: 20px;
@@ -127,7 +143,7 @@ body {
 /* committed section styling ends here */
 
 /* alert section styling starts here */
-.alert{
+.alert {
     margin: 30px 0;
     text-align: center;
     font-size: 15px;
@@ -136,19 +152,20 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
+
 /* alert section styling ends here */
 
 /* upcoming section styling starts here */
-.upcoming{
+.upcoming {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.upcoming img{
+.upcoming img {
     width: 250px;
     height: 250px;
     border-radius: 10px;
@@ -158,7 +175,7 @@ body {
 /* upcoming section styling ends here */
 
 /* subscribe section styling starts here */
-.subscribe{
+.subscribe {
     background-color: wheat;
     width: 100%;
     padding: 30px 0;
@@ -168,35 +185,35 @@ body {
     margin-bottom: 20px;
 }
 
-.subscribe h1{
+.subscribe h1 {
     font-size: 25px;
 }
 
-.inputs{
+.inputs {
     margin: 30px 0px 20px 0px;
 }
 
-input{
+input {
     padding: 20px 80px;
 }
 
-.email{
+.email {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border: 0;
 }
 
-input:focus{
+input:focus {
     border-right: 0;
     color: red;
 }
 
 
-button:active{
+button:active {
     color: red;
 }
 
-.subs{
+.subs {
     padding: 20px 30px;
     margin-left: -5px;
     cursor: pointer;
@@ -205,26 +222,28 @@ button:active{
     border-bottom-right-radius: 20px;
     border: 0;
 }
+
 /* subscribe section styling ends here */
 
 /* why us sectin styling starts here */
-.why_us{
+.why_us {
     text-align: center;
     background-color: rgb(238, 238, 238);
     padding: 30px 0px;
     border-radius: 10px;
 }
 
-.why_us .better{
+.why_us .better {
     font-size: 25px;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
 }
+
 /* why us sectin styling ends here */
 
 /* footer section styling starts here */
-footer{
+footer {
     text-align: center;
     margin-top: 40px;
     background-color: wheat;
@@ -232,22 +251,23 @@ footer{
     padding: 40px 0px;
 }
 
-footer h1{
+footer h1 {
     font-size: 25px;
     text-transform: uppercase;
 }
 
-.links{
+.links {
     margin: 30px 0px;
 }
 
-footer .links a{
+footer .links a {
     margin: 20px;
 }
 
-footer .links img{
+footer .links img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 }
+
 /* footer section styling ends here */
