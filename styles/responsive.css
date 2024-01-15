@@ -1,3 +1,13 @@
+@media screen and (min-width:601px) and (max-width:980px) {
+    .products{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .upcoming{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
 @media screen and (max-width:600px) {
     body{
         width: 90%;
