@@ -26,8 +26,8 @@ body {
 }
 
 .ball_2 {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: rgba(71, 194, 0, 0.295);
     position: absolute;
@@ -45,6 +45,13 @@ body {
     margin: 15% auto;
     padding: 5%;
     border-radius: 10px;
+}
+
+.back_btn{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 20px;
 }
 
 #email,
