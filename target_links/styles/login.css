@@ -1,14 +1,18 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+
+body {
     background-color: wheat;
     margin: auto;
+    font-family: 'Jomolhari', serif;
+
 }
 
-.contents{
+.contents {
     width: 70%;
     margin: auto;
 }
 
-.ball_1{
+.ball_1 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -21,7 +25,7 @@ body{
 
 }
 
-.ball_2{
+.ball_2 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -33,24 +37,41 @@ body{
 }
 
 
-.login{
+.login {
     position: relative;
-    width: 40%;
-    margin: 20% auto;
+    width: 38%;
     background-color: rgba(71, 194, 0, 0.425);
-    padding: 20px;;
+    display: flex;
+    margin: 15% auto;
+    padding: 5%;
+    border-radius: 10px;
 }
 
-#email, #password{
+#email,
+#password {
     display: flex;
     margin: auto;
-    margin-top: 20px;
-    padding: 5px;
+    margin-top: 2rem;
+    padding: 8px;
     width: 100%;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px dashed white;
+    border-radius: 20px;
     text-align: center;
+    color: white;
 }
 
-.down_town{
+input:focus{
+    color: palevioletred;
+    border: none;
+}
+
+input:active{
+    border: none;
+}
+
+.down_town {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,27 +79,29 @@ body{
     margin-top: 20px;
 }
 
-.forgot a{
+.forgot a {
     text-decoration: none;
     color: yellow;
 }
 
-button{
+button {
     margin: auto;
     display: flex;
     margin-top: 20px;
-    padding: 5px 50px;
+    padding: 10px 50px;
     border: 0;
+    border-radius: 20px;
+    cursor: pointer;
     background-color: black;
     color: white;
 }
 
 @media screen and (min-width:601px) and (max-width:1080px) {
-    .contents{
+    .contents {
         width: 80%;
     }
 
-    .login{
+    .login {
         width: 70%;
     }
 
@@ -86,20 +109,21 @@ button{
 }
 
 @media screen and (max-width:600px) {
-    .contents{
+    .contents {
+        width: 80%;
+    }
+
+    .login {
         width: 90%;
     }
 
-    .login{
-        width: 90%;
-    }
-    .down_town{
+    .down_town {
         flex-direction: column;
         text-align: center;
         margin: 30px auto;
     }
 
-    .remember{
+    .remember {
         margin-bottom: 20px;
     }
 }
