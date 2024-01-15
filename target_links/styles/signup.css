@@ -116,3 +116,32 @@ button{
 button:hover .box_2{
     z-index: 1;
 }
+
+/* tablet responsive styling */
+
+@media screen and (max-width:1080px) and (min-width:681px) {
+       form{
+        width: 90%;
+       }
+
+       input{
+        width: 80%;
+       }
+}
+
+/* mobile responsive styling */
+
+@media screen and (max-width:680px) {
+    form{
+        width: 95%;
+        margin: 30% auto;
+    }
+
+    input{
+        width: 95%;
+    }
+
+    select{
+        width: 95%;
+    }
+}
